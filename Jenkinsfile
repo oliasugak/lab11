@@ -9,7 +9,7 @@ pipeline {
 	stages {
 		stage('git') {
 			steps {
-				git url: " "
+				git url: "https://github.com/Kesha-na-vzlet/appz_bot_example.git"
 			}
 		}
 		stage('Build') {
