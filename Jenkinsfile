@@ -15,8 +15,8 @@ pipeline {
 		stage('Build') {
 			steps {
 				sh 'mvn clean install'
-				sh 'cd /var/jenkins_home/workspace/Lab11/hello_bot/src/main/java/kpi/acts/appz/bot/hellobot'
-				sh 'mvn -e exec:java -Dexec.mainClass="HelloWorldBot.java" -Dexec.args="1601078076:AAGTHF43CyPSXfhi209Zd5CkDe56kJpIN4w vagrantbot"'
+				sh 'cd /var/jenkins_home/workspace/Lab11/hello_bot/'
+				sh 'mvn -e exec:java -Dexec.mainClass="kpi.acts.appz.bot.hellobot.HelloWorldBot" -Dexec.args="1601078076:AAGTHF43CyPSXfhi209Zd5CkDe56kJpIN4w vagrantbot"'
 			}
 		}
 	}
