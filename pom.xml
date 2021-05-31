@@ -35,7 +35,7 @@
                 <version>3.0.0</version>
                 <configuration>
                     <includePluginDependencies>true</includePluginDependencies>
-                    <mainClass>/var/jenkins_home/workspace/Job1/hello_not/src/main/java/kpi/acts/appz/bot/hellobot/HelloWorldBot</mainClass>
+                    <mainClass>\var\jenkins_home\workspace\Job1\hello_not\src\main\java\kpi\acts\appz\bot\hellobot\HelloWorldBot</mainClass>
                 </configuration>
             </plugin>
         </plugins>
