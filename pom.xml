@@ -29,16 +29,12 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.4</version>
+            <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
                 <configuration>
-                    <archive>
-                        <index>true</index>
-                        <manifest>
-                            <mainClass>kpi.acts.appz.bot.hellobot.HelloWorldBot.java</mainClass>
-                        </manifest>
-                    </archive>
+                    <includePluginDependencies>true</includePluginDependencies>
+                    <mainClass>kpi.acts.appz.bot.hellobot.HelloWorldBot</mainClass>
                 </configuration>
             </plugin>
         </plugins>
