@@ -1,7 +1,7 @@
 pipeline {
 	agent {
 		docker {
-			image 'maven:3.8.1-openjdk-17'
+			image 'maven:3-alpine'
 			args '-v $HOME/.m2:/root/.m2'
 		}
 	}
@@ -9,7 +9,7 @@ pipeline {
 		stage('Build') {
 			steps {
 				sh 'mvn clean install'
-				sh 'mvn -X exec:java -Dexec.mainClass="HelloWorldBot" -Dexec.args="1601078076:AAGTHF43CyPSXfhi209Zd5CkDe56kJpIN4w vagrantbot"'
+				sh 'mvn -X exec:java -Dexec.mainClass="kpi.acts.appz.bot.hellobot.HelloWorldBot" -Dexec.args="1601078076:AAGTHF43CyPSXfhi209Zd5CkDe56kJpIN4w vagrantbot"'
 			}
 		}
 	}
