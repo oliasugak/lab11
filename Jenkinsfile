@@ -9,8 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'mvn clean'
-        sh 'mvn compile'
-        sh 'mvn -e exec:java -Dexec.mainClass="kpi.acts.appz.bot.hellobot.HelloWorldBot" -Dexec.args="1601078076:AAGTHF43CyPSXfhi209Zd5CkDe56kJpIN4w vagrantbot"'
+       
       }
     }
   }
